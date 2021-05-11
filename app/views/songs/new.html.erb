@@ -3,9 +3,9 @@
 <%= form_for @song  do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
+  <input name="song[genre_ids][]">
+  <input type="submit" value="Submit">
   <br />
 
   <%= f.submit %>
 <% end %>
-
-
